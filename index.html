@@ -6,42 +6,66 @@
     </head>
     <body>
         <div id="display">
-            <label for="pilot-performance">Pilot Performance</label>
-            <select name="pilot-performance" id="pilot-performance">
-                <option value="S">S</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-            </select>
+            <!-- Pilot/Unit, Weapon Adjustment Display-->
+            <div id="pu-wp-adjustment-display">
+                <label for="pilot-performance">Pilot Performance</label>
+                <select name="pilot-performance" id="pilot-performance">
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
 
-            <h2 id="pilot-number">Pilot Performance Number</h2>
+                <h2 id="pilot-number">Pilot Performance Number</h2>
 
-            <label for="unit-performance">Unit Performance</label>
-            <select name="unit-performance" id="unit-performance">
-                <option value="S">S</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-            </select>
+                <label for="unit-performance">Unit Performance</label>
+                <select name="unit-performance" id="unit-performance">
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
 
-            <h2 id="unit-number">Unit Performance Number</h2>
+                <h2 id="unit-number">Unit Performance Number</h2>
 
-            <h2 id="total-performance">Total Performance Number</h2>
+                <h2 id="total-performance">Total Performance Number</h2>
 
-            <h2 id="pu-adjustment-display">Total Performance Adjustment</h2>
+                <h2 id="pu-adjustment-display">Total Performance Adjustment</h2>
 
-            <label for="weapon-performance">Weapon Performance</label>
-            <select name="weapon-performance" id="weapon-performance">
-                <option value="S">S</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-            </select>
+                <label for="weapon-performance">Weapon Performance</label>
+                <select name="weapon-performance" id="weapon-performance">
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
 
-            <h2 id="wp-adjustment-display">Weapon Performance Adjustment</h2>
+                <h2 id="wp-adjustment-display">Weapon Performance Adjustment</h2>
+
+                <label for="unit-size">Unit Size</label>
+                <select name="unit-size" id="unit-size">
+                    <option value="LL">LL</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                </select>
+
+                <h2 id="size-adjustment-display">Size Adjustment</h2>
+            </div>
+
+            <!-- Range/Command Adjustment Display-->
+            <div id="rc-adjustment-display">
+                <h2>Range from Attacker to Defender</h2>
+                <input id="attack-distance" type="number">
+                <h2 id="range-adjustment-display">Range Adjustment</h2>
+
+                <h2>Range from Attacker to Command Character</h2>
+                <input id="command-distance" type="number">
+                <h2 id="command-adjustment-display">Commad Adjustment</h2>
+            </div>
         </div>
         <script src="resources/js/script.js"></script>
     </body>
