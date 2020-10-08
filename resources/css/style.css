@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+    padding-bottom: 0.15em;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    background-color: #8f8f8f;
+    margin: 3em;
+}
+
+#pu-wp-adjustment-display, #rc-adjustment-display, #value-display {
+    padding: 3em;
+    margin: 1em;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+#pu-wp-adjustment-display {
+
+    flex-direction: column;
+}
+
+#rc-adjustment-display, #value-display {
+    flex-direction: row;
+}
