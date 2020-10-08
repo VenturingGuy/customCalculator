@@ -1,6 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #002626;
+    background-image: linear-gradient(rgba(141, 141, 172, .7) .1em, 
+    transparent .1em), linear-gradient(90deg, rgba(141, 141, 172, .7) .1em,
+    transparent .1em);
+
+    background-size: 2em 2em;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-    background: none;
+    color: #ddd5d5;
     font-weight: normal;
     margin: 0;
     overflow: hidden;
@@ -8,10 +22,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.15em;
 }
 
+label, #display h2{
+    color: #ddd5d5;
+    background-color: #000000;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 88%)
+}
 #display {
     display: flex;
     flex-direction: column;
-    background-color: #8f8f8f;
+    background-color: #005252;
+    opacity: 0.8;
     margin: 3em;
 }
 
