@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ddd5d5;
     font-weight: normal;
     margin: 0;
-    overflow: hidden;
+    overflow: visible;
     padding-top: 0.5em;
     padding-bottom: 0.15em;
 }
@@ -34,9 +34,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     padding: 1em;
     margin: 1.5em;
+    font-size: 16px;
 }
 
-select {
+select, input{
     align-self: center;
 }
 #pu-wp-adjustment-display label, #pu-wp-adjustment-display h2{
@@ -46,7 +47,12 @@ select {
 
 #rc-adjustment-display label, #rc-adjustment-display h2{
     border: solid 2px #7e2814;
-    background: linear-gradient(180deg, rgba(169,33,0,100) 1%, rgba(0,0,0,98) 40%, rgba(169,33,0,85) 88%);
+    background: linear-gradient(180deg, rgba(169,33,0,0.9) 0%, rgba(0,0,0,0.9) 50%, rgba(169,33,0,0.9) 90%);
+}
+
+#value-display h2 {
+    border: solid 2px #004992;
+    background: linear-gradient(180deg, rgba(0,13,238,0.9) 0%, rgba(0, 0, 68, 0.9) 50%, rgba(0,13,238,0.9) 90%);
 }
 
 #pu-wp-adjustment-display, #rc-adjustment-display, #value-display {
@@ -63,7 +69,6 @@ select {
 }
 
 #pu-wp-adjustment-display {
-
     flex-direction: column;
 }
 
